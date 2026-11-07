@@ -1,0 +1,21 @@
+*{
+    box-sizing:border-box;
+}
+.ancher a{
+    position:relative;
+}
+.ancher a::before{
+    position:absolute;
+    content: '';
+    width: 0%;
+    height: 3px;    
+    bottom:-3px;
+    left: 0px;
+    background-color: #abbed197;
+    transition: all 0.3s;
+}
+.ancher a:hover::before,
+.ancher a.active::before{
+    width: 100%;
+    /* background-color: #abbed197; */
+}
